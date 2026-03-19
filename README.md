@@ -156,7 +156,9 @@ Referencia de citación: https://bibliotecas.duoc.cl/ia
 *Me parecio una evaluacion muy llamativa ya que yo no tenia un conocimiento muy claro de como usar github y con esta evaluacion pude aprender a trabajar github mas profesionalmente*
 
 ### Matias Molina
-*(Escribir reflexión personal aquí — sin uso de IA, explicando tu aprendizaje y contribución al proyecto)*
+*Durante el desarrollo de este proyecto pude comprender de mejor manera cómo funciona el trabajo colaborativo utilizando Git y GitHub. Al principio me costó entender el uso de ramas y la diferencia entre main y develop, pero a medida que avanzamos fui logrando mayor claridad en el uso de GitFlow.
+
+Considero que una de las partes más importantes fue la simulación del trabajo en equipo, ya que tuvimos que coordinarnos para no sobrescribir cambios y utilizar correctamente los pull requests. Esto me permitió entender la importancia de la comunicación y la organización en proyectos reales.
 
 ---
 
