@@ -1,5 +1,5 @@
 package com.smartlogix.ms_inventario.model;
-
+//Modelo del producto
 import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;
