@@ -50,5 +50,4 @@ public class ProductoController {
         return ResponseEntity.ok(productoService.bajoStock());
     }
 
-    String nombre = null.toUpperCase();
 }
