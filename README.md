@@ -1,136 +1,129 @@
 # 🚀 Microservicio DevOps - Gestión de Inventario
 
-## 📌 Descripción del Proyecto
+## 📌 Descripción
 
-Este proyecto corresponde a un microservicio de gestión de inventario desarrollado en Java con Spring Boot.
-Su objetivo es servir como base para la implementación de un pipeline DevOps, integrando control de versiones, trabajo colaborativo y automatización mediante CI/CD.
+Este proyecto corresponde a un microservicio de gestión de inventario desarrollado en Java utilizando Spring Boot.
+El objetivo es implementar una base sólida para un pipeline DevOps, aplicando control de versiones, trabajo colaborativo y automatización mediante CI/CD.
 
 ---
 
 ## 🌿 Estrategia de Ramificación: GitFlow
 
-Para este proyecto se utilizó el modelo **GitFlow**, ya que permite organizar el trabajo colaborativo de manera clara y estructurada.
+Se implementó el modelo **GitFlow** para organizar el desarrollo del proyecto.
 
 ### 🔹 Ramas principales
 
-* `main`: contiene el código en estado de producción.
-* `develop`: rama de integración donde se consolidan las nuevas funcionalidades.
+* `main`: contiene la versión estable del sistema (producción).
+* `develop`: rama de integración donde se consolidan los cambios.
 
-### 🔹 Ramas de soporte
+### 🔹 Ramas de trabajo utilizadas en este proyecto
 
-* `feature/<nombre>`: desarrollo de nuevas funcionalidades.
-* `hotfix/<nombre>`: corrección de errores críticos en producción.
+* `feature/modelo-producto`
+* `feature/controller-producto`
+* `hotfix/error`
 
-###  Justificación
+### ✅ Justificación
 
 Se eligió GitFlow porque:
 
-* Permite trabajar en paralelo sin afectar producción.
-* Facilita la trazabilidad del código.
-* Es ideal para equipos de desarrollo colaborativo.
+* Permite trabajo paralelo sin afectar producción.
+* Mejora la organización del equipo.
+* Facilita la trazabilidad de cambios.
+* Es ideal para entornos colaborativos en DevOps.
 
 ---
 
 ## 👥 Flujo de Trabajo Colaborativo
 
-El flujo de trabajo utilizado fue el siguiente:
+Se simuló un entorno de desarrollo en equipo utilizando GitHub.
 
-1. Creación de rama desde `develop`:
+### 🔄 Flujo aplicado
 
-   ```
-   git checkout develop
-   git checkout -b feature/nueva-funcionalidad
-   ```
+1. Creación de ramas feature desde `develop`
+2. Desarrollo de funcionalidades en paralelo:
 
-2. Desarrollo y commits:
-
-   ```
-   git add .
-   git commit -m "Cambio Del modelo"
-   ```
-
-3. Subida de cambios:
-
-   ```
-   git push origin feature/
-   ```
-
-4. Creación de Pull Request hacia `develop`.
-
-5. Revisión de código por otro integrante.
-
-6. Merge a `develop`.
+   * Modelo de producto
+   * Controlador de producto
+3. Uso de commits con mensajes claros
+4. Creación de Pull Requests hacia `develop`
+5. Revisión de código entre integrantes
+6. Integración de cambios mediante merge
 
 ### 🔥 Hotfix
 
-1. Se crea desde `main`
-2. Se corrige el error
-3. PR hacia `main`
+Se implementó una corrección urgente:
+
+* Rama: `hotfix/error`
+* Origen: `main`
+* Destino: `main`
 
 ---
 
 ## 📝 Convenciones de Commits
 
-Se utilizaron mensajes de commit estandarizados:
+Se utilizaron las siguientes convenciones:
 
 * `feat:` nueva funcionalidad
 * `fix:` corrección de errores
 * `docs:` cambios en documentación
-* `refactor:` mejoras internas del código
+* `refactor:` mejora del código
 * `test:` pruebas
 
-Ejemplo:
+### 📌 Ejemplo
 
 ```
-feat: agregar endpoint para crear producto
+feat: creación del modelo Producto
+fix: corrección de error en API
 ```
 
 ---
 
 ## 🏷️ Naming de Ramas
 
+Se siguieron estándares para nombrar ramas:
+
 * `feature/nombre-funcionalidad`
 * `hotfix/nombre-error`
 
-Ejemplos:
+### 📌 Ejemplos reales del proyecto
 
 ```
-feature/login
-feature/registro-producto
-hotfix/error-
+feature/modelo-producto
+feature/controller-producto
+hotfix/error
 ```
 
 ---
 
 ## 🔄 Estrategia de Merge
 
-* Las ramas `feature` se integran a `develop` mediante Pull Request.
-* La rama `develop` se integra a `main` cuando está estable.
-* Los `hotfix` se integran directamente a `main`.
+* `feature` → `develop` mediante Pull Request
+* `develop` → `main` cuando el sistema está estable
+* `hotfix` → `main` directamente
+
+Se utilizó revisión de código antes de cada merge para asegurar calidad.
 
 ---
 
 ## ⚙️ Integración Continua (CI/CD)
 
-Se configuró **GitHub Actions** para automatizar el flujo de integración.
+Se configuró **GitHub Actions** para automatizar el proceso de integración.
 
-### 📌 Funcionamiento
+### 📌 Ejecución del pipeline
 
-El pipeline se ejecuta cuando:
+* Push a `develop`
+* Pull Request hacia `main`
 
-* Se hace `push` a la rama `develop`
-* Se crea un `pull request` hacia `main`
+### 📌 Funcionalidad
 
-### 📌 Tareas del pipeline
+* Clonación del repositorio
+* Ejecución de tareas básicas de validación
 
-* Clonar el repositorio
-* Ejecutar tareas básicas (validación de integración)
+### 🎯 Beneficios
 
-Esto permite:
-
-* Detectar errores rápidamente
-* Mantener calidad del código
-* Automatizar procesos DevOps
+* Detección temprana de errores
+* Automatización del flujo de trabajo
+* Mejora en la calidad del código
 
 ---
 
@@ -149,22 +142,20 @@ src/
 
 
 
----
-
 ## 📌 Conclusión
 
-Este proyecto permitió aplicar conceptos de:
+El desarrollo de este proyecto permitió aplicar:
 
 * Control de versiones con Git
-* Trabajo colaborativo
-* Estrategias de ramificación
+* Estrategias de ramificación (GitFlow)
+* Trabajo colaborativo con Pull Requests
 * Automatización con GitHub Actions
 
 ---
 
 ## 👤 Integrantes
 
-* Matias Molina
 * Axel Subiabre
+* Matías Molina
 
 ---
