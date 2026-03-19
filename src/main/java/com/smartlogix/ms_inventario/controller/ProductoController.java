@@ -49,4 +49,6 @@ public class ProductoController {
     public ResponseEntity<List<ProductoResponse>> bajoStock() {
         return ResponseEntity.ok(productoService.bajoStock());
     }
+
+    String nombre = null.toUpperCase();
 }
