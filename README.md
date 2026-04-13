@@ -135,21 +135,6 @@ Este pipeline cumple la función de **Integración Continua (CI)**, automatizand
 
 ---
 
-## 🤖 Uso de Inteligencia Artificial
-
-Durante el desarrollo de este proyecto se utilizó **Claude (Anthropic)** como herramienta de apoyo para:
-
-- Orientación sobre el flujo de trabajo con GitFlow
-- Explicación de comandos Git y su uso correcto
-- Apoyo en la redacción y estructura de este README
-- Consultas sobre la configuración de GitHub Actions
-
-Todas las decisiones técnicas, justificaciones y reflexiones personales fueron elaboradas por los integrantes del equipo. El contenido generado con IA fue revisado y validado según los requerimientos del proyecto.
-
-Referencia de citación: https://bibliotecas.duoc.cl/ia
-
----
-
 ## 📌 Conclusiones
 
 ### Axel Subiabre
